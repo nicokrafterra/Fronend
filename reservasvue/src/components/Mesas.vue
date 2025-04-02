@@ -78,7 +78,7 @@ const obtenerTipoPlan = () => {
 // Función para obtener las mesas disponibles
 const obtenerMesas = async () => {
   try {
-    const response = await axios.get("http://127.0.0.1:8000/planes/Mesa/tipo");
+    const response = await axios.get("http://192.168.101.98:8000/planes/Mesa/tipo");
     Mesas.value = response.data;
   } catch (error) {
     console.error("Error al obtener los lugares:", error);

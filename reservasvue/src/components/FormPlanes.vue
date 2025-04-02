@@ -81,7 +81,7 @@ const agregarPlan = async () => {
 	loading.value = true;
 
 	try {
-		const response = await axios.post("http://localhost:8000/planes", planData);
+		const response = await axios.post("http://192.168.101.98:8000/planes", planData);
 
 		if (!response.ok) {
 			throw new Error("Error al agregar el plan");

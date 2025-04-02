@@ -84,7 +84,7 @@ const obtenerReservas = async () => {
 			throw new Error("No se pudo obtener el ID del usuario.");
 		}
 
-		const response = await axios.get(`http://localhost:8000/reservas/${usuarioId.value}/user`, {
+		const response = await axios.get(`http://192.168.101.98:8000/reservas/${usuarioId.value}/user`, {
 			headers: {
 				Authorization: `Bearer ${token}`
 			}

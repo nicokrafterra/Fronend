@@ -71,7 +71,7 @@ const Lugares = ref([]);
 // Función para obtener los campings disponibles
 const obtenerCamping = async () => {
   try {
-    const response = await axios.get("http://127.0.0.1:8000/planes/Camping/tipo");
+    const response = await axios.get("http://192.168.101.98:8000/planes/Camping/tipo");
     Lugares.value = response.data;
   } catch (error) {
     console.error("Error al obtener los lugares:", error);

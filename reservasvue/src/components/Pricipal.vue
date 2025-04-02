@@ -31,7 +31,7 @@ const imagenPerfil = computed(() => {
   const imagen = store.state.usuario?.imagen;
   console.log("URL de la imagen en el componente:", imagen); // Depuración
   return imagen
-    ? `http://localhost:8000/${imagen}?${Date.now()}` // Timestamp para evitar caché
+    ? `http://192.168.101.98:8000/${imagen}?${Date.now()}` // Timestamp para evitar caché
     : imagenPorDefecto.value;
 });
 

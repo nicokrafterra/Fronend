@@ -51,7 +51,7 @@ const volver = () => {
 
 const obtenerPqrs = async () => {
 	try {
-		const response = await fetch("http://localhost:8000/pqrs/");
+		const response = await fetch("http://192.168.101.98:8000/pqrs/");
 		pqrs.value = await response.json();
 	} catch (error) {
 		console.error("Error al obtener PQRS:", error);

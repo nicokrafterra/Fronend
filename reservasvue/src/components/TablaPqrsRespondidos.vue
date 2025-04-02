@@ -57,7 +57,7 @@ const obtenerPqrsRespondidos = async () => {
 
 	try {
 		const token = localStorage.getItem('token');
-		const response = await axios.get(`http://localhost:8000/usuarios/${usuarioId.value}/pqrs/respondidos`, {
+		const response = await axios.get(`http://192.168.101.98:8000/usuarios/${usuarioId.value}/pqrs/respondidos`, {
 			headers: {
 				Authorization: `Bearer ${token}`, // 🔹 Se incluye el token JWT en la solicitud
 			},

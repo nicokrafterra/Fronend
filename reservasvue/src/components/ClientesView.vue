@@ -160,7 +160,7 @@ export default {
 	methods: {
 		async cargarUsuarios() {
 			try {
-				const response = await axios.get("http://127.0.0.1:8000/usuarios");
+				const response = await axios.get("http://192.168.101.98:8000/usuarios");
 				console.log(response.data)
 				this.users = response.data;
 			} catch (error) {

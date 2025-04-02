@@ -23,7 +23,7 @@ export default {
 	methods: {
 		async solicitarRecuperacion() {
 			try {
-				const response = await axios.post('http://localhost:8000/recuperarpassword', { email: this.email });
+				const response = await axios.post('http://192.168.101.98:8000/recuperarpassword', { email: this.email });
 				this.mensaje = response.data.message;
 			} catch (error) {
 				this.mensaje = error.response?.data?.detail || "Error al enviar el correo";

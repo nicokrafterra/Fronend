@@ -59,7 +59,7 @@ export default {
 			}
 
 			try {
-				const response = await api.post("/login", {
+				const response = await api.post("http://192.168.101.98:8000/login", {
 					nombre_usuario: this.email,
 					password: this.password,
 				});

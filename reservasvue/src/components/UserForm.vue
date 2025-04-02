@@ -50,7 +50,7 @@
 	methods: {
 	  async actualizarUsuario() {
 		try {
-		  await axios.put(`http://127.0.0.1:8000/usuarios/${this.usuario.id}`, this.localUsuario);
+		  await axios.put(`http://192.168.101.98:8000/usuarios/${this.usuario.id}`, this.localUsuario);
 		  
 		  Swal.fire({
 			title: 'Éxito!',

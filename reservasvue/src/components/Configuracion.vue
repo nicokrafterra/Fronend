@@ -56,7 +56,7 @@ const cambiarFoto = async (event) => {
 
   try {
     const response = await axios.put(
-      `http://localhost:8000/usuarios/${userId.value}/actualizar-foto`,
+      `http://192.168.101.98:8000/usuarios/${userId.value}/actualizar-foto`,
       formData,
       {
         headers: {
@@ -98,7 +98,7 @@ const eliminarCuenta = async () => {
 	}).then(async (result) => {
 		if (result.isConfirmed) {
 			try {
-				await axios.delete(`http://localhost:8000/usuarios/${userId.value}`, {
+				await axios.delete(`http://192.168.101.98:8000/usuarios/${userId.value}`, {
 					headers: {
 						Authorization: `Bearer ${localStorage.getItem('token')}`,
 					},
