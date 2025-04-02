@@ -43,7 +43,7 @@ export default {
 		// Método para obtener los planes
 		async obtenerPlanes() {
 			try {
-				const response = await fetch('http://127.0.0.1:8000/planes/');
+				const response = await fetch('http://192.168.101.98:8000/planes/');
 				if (response.ok) {
 					this.planes = await response.json();
 				} else {
