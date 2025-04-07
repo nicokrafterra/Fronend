@@ -50,7 +50,7 @@
 	methods: {
 	  async actualizarUsuario() {
 		try {
-		  await axios.put(`http://192.168.101.98:8000/usuarios/${this.usuario.id}`, this.localUsuario);
+		  await axios.put(`http://192.168.101.79:8000/usuarios/${this.usuario.id}`, this.localUsuario);
 		  
 		  Swal.fire({
 			title: 'Éxito!',
@@ -73,7 +73,7 @@
 	  },
 	  async eliminarUsuario() {
 		try {
-		  await axios.delete(`http://127.0.0.1:8000/usuarios/${this.usuario.id}`);
+		  await axios.delete(`http://192.168.101.79:8000/usuarios/${this.usuario.id}`);
 		  
 		  Swal.fire({
 			title: 'Éxito!',

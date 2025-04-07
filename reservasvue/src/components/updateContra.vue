@@ -75,7 +75,7 @@ export default {
 
 				// Enviar solicitud con el token JWT en los headers
 				const response = await axios.post(
-					`http://192.168.101.98:8000/usuarios/${this.userId}/actualizar_contraseña`,
+					`http://192.168.101.79:8000/usuarios/${this.userId}/actualizar_contraseña`,
 					{
 						contraseñaActual: this.currentPassword,
 						nuevaContraseña: this.newPassword,

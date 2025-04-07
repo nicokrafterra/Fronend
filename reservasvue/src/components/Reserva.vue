@@ -136,7 +136,7 @@ const hacerReserva = async () => {
 
 	try {
 		const token = localStorage.getItem('token');
-		const response = await fetch('http://192.168.101.98:8000/reservas/', {
+		const response = await fetch('http://192.168.101.79:8000/reservas/', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',

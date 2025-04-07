@@ -59,7 +59,7 @@ export default {
 			}
 
 			try {
-				const response = await api.post("http://192.168.101.98:8000/login", {
+				const response = await api.post("http://192.168.101.79:8000/login", {
 					nombre_usuario: this.email,
 					password: this.password,
 				});
@@ -127,7 +127,7 @@ export default {
 					return;
 				}
 
-				const response = await axios.get("http://192.168.101.98:8000/protegido", {
+				const response = await axios.get("http://192.168.101.79:8000/protegido", {
 					headers: {
 						"Authorization": `Bearer ${token}`,
 					},

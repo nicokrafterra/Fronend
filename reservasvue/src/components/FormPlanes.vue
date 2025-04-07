@@ -81,7 +81,7 @@ const agregarPlan = async () => {
 	loading.value = true;
 
 	try {
-		const response = await axios.post("http://192.168.101.98:8000/planes", planData);
+		const response = await axios.post("http://192.168.101.79:8000/planes", planData);
 
 			Swal.fire({
 				icon: "success",

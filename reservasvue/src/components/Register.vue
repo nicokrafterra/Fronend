@@ -112,7 +112,7 @@ export default {
 
 			if (valid) {
 				try {
-					const response = await axios.post("http://192.168.101.98:8000/usuarios/", {
+					const response = await axios.post("http://192.168.101.79:8000/usuarios/", {
 						nombre: this.nombre,
 						apellido: this.apellido,
 						correoElectronico: this.email,

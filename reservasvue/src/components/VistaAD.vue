@@ -97,7 +97,7 @@ export default {
 		imagenPerfil() {
 			const store = useStore();
 			return store.state.usuario.imagen
-				? `http://192.168.101.98:8000/${store.state.usuario.imagen}`
+				? `http://192.168.101.79:8000/${store.state.usuario.imagen}`
 				: this.imagenPorDefecto;
 		},
 		...mapState(['usuario']),

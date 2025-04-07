@@ -53,7 +53,7 @@ async function updateEmail() {
 
 	try {
 		await axios.put(
-			`http://192.168.101.98:8000/usuarios/${userId.value}/correo`,
+			`http://192.168.101.79:8000/usuarios/${userId.value}/correo`,
 			{ nuevo_correo: newEmail.value },
 			{
 				headers: {

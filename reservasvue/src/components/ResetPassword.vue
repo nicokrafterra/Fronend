@@ -30,7 +30,7 @@ export default {
 
     console.log("Datos enviados:", datos); // Verifica los datos antes de enviar
 
-    const response = await axios.post("http://192.168.101.98:8000/reset-password", datos);
+    const response = await axios.post("http://192.168.101.79:8000/reset-password", datos);
     alert("Contraseña restablecida correctamente.");
     router.push("/Iniciar");
   } catch (error) {

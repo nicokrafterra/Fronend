@@ -84,7 +84,7 @@ const obtenerReservas = async () => {
 			throw new Error("No se pudo obtener el ID del usuario.");
 		}
 
-		const response = await axios.get(`http://192.168.101.98:8000/reservas/${usuarioId.value}/user`, {
+		const response = await axios.get(`http://192.168.101.79:8000/reservas/${usuarioId.value}/user`, {
 			headers: {
 				Authorization: `Bearer ${token}`
 			}
@@ -99,7 +99,7 @@ const pagarReserva = async (id) => {
 	try {
 		const token = localStorage.getItem('token');
 		if (!token) throw new Error("No hay token disponible, inicia sesión.");
-		const response = await axios.post(`http://localhost:8000/reservas/${id}/pagar`, null, {
+		const response = await axios.post(`http://192.168.101.79:8000/reservas/${id}/pagar`, null, {
 			headers: {
 				Authorization: `Bearer ${token}`
 			}
@@ -132,7 +132,7 @@ const eliminarReserva = async (id) => {
 	try {
 		const token = localStorage.getItem('token');
 		if (!token) throw new Error("No hay token disponible, inicia sesión.");
-		const response = await axios.delete(`http://localhost:8000/reservas/${id}`, {
+		const response = await axios.delete(`http://192.168.101.79:8000/reservas/${id}`, {
 			headers: {
 				Authorization: `Bearer ${token}`
 			}

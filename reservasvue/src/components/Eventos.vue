@@ -73,7 +73,7 @@ const volver = () => {
 // Obtener los lugares disponibles para eventos
 const obtenerLugares = async () => {
   try {
-    const response = await axios.get("http://192.168.101.98:8000/planes/Evento/tipo");
+    const response = await axios.get("http://192.168.101.79:8000/planes/Evento/tipo");
     Lugares.value = response.data;
   } catch (error) {
     console.error("Error al obtener los lugares:", error);

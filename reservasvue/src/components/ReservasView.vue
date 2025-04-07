@@ -156,7 +156,7 @@ export default {
 	methods: {
 		async obtenerReservas() {
 			try {
-				const response = await fetch('http://192.168.101.98:8000/reservas/');
+				const response = await fetch('http://192.168.101.79:8000/reservas/');
 				if (response.ok) {
 					this.reservas = await response.json();
 				} else {
@@ -168,7 +168,7 @@ export default {
 		},
 		async eliminarReserva(id) {
 			try {
-				const response = await fetch(`http://192.168.101.98:8000/reservas/${id}`, {
+				const response = await fetch(`http://192.168.101.79:8000/reservas/${id}`, {
 					method: 'DELETE',
 				});
 				if (response.ok) {
